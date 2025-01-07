@@ -1,11 +1,10 @@
-start:
-	./build/manga
-
 build:
 	@echo "Building project..."
 	go build -v -buildvcs=false -o=build/manga
 	@echo "Project built"
 
+start:
+	./build/manga
 test:
 	go test
 
