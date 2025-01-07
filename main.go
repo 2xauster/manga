@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/2xauster/manga/api"
 	"github.com/gorilla/mux"
 	"github.com/joho/godotenv"
 )
@@ -41,7 +42,7 @@ func main() {
 	}
 	router := mux.NewRouter()
 
-	RegisterRoutes(router)
+	api.RegisterRoutes(router)
 	
 	started := make(chan struct{})
 	go func() {

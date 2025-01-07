@@ -1,5 +1,5 @@
 start:
-	./bin/manga
+	./build/manga
 
 build:
 	@echo "Building project..."
@@ -12,7 +12,10 @@ test:
 dev:
 	go run . --isDev 
 
-clean:
+reset:
 	@echo "Resetting build..."
 	rm -r build
 	@echo "build directory removed"
+
+tidy:
+	go mod tidy
