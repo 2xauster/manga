@@ -13,6 +13,17 @@ As the name suggests, it's an api that you can use to fetch manga information as
 3. ???
 
 ### Local
+0. Install dependencies
+```sh
+make tidy
+```
+
+or 
+
+```sh
+go mod tidy
+```
+
 1. Build the project
 ```sh
 make
